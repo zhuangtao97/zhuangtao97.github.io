@@ -19,7 +19,7 @@
 打印: (&amp;#39;val1&amp;#39;, &amp;#39;val2&amp;#39;)
 2, 默认参数
 123def parameters(key1,key2=&apos;val2&apos;):    print (key1,key2)p">
-<meta property="og:updated_time" content="2016-12-15T12:21:49.000Z">
+<meta property="og:updated_time" content="2016-12-15T12:38:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python">
 <meta name="twitter:description" content="python中5种参数类型1, 必选参数
@@ -277,10 +277,11 @@
 <p>   如果有多个关键字参数时，我们可以把这些关键字参数放在一个dictionary里面传给关键字参数。</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dict = &#123;<span class="string">'dictKey'</span><span class="symbol">:<span class="string">'dictValue'</span></span>&#125;</div><div class="line">parameters(<span class="string">'val1'</span>,**dict)</div></pre></td></tr></table></figure>
 <p><code>打印：(&#39;val1&#39;, {&#39;dictKey&#39;: &#39;dictValue&#39;})</code></p>
-<p><strong>5, 命名关键字参数</strong><br><br></p>
-<p>   <code>python3.0版本以下 无此定义</code></p>
+<p><strong>5, 命名关键字参数</strong>  </p>
+<p><code>python3.0版本以下 无此定义</code></p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,key2,*,key3,key4)</span></span>:</div><div class="line">    print (key1,key2,key3,key4)</div><div class="line"></div><div class="line">parameters(<span class="string">'val1'</span>,<span class="string">'val2'</span>,key3=<span class="string">'val3'</span>,key4=<span class="string">'val4'</span>)</div></pre></td></tr></table></figure>
 <p>  <code>打印: val1 val2 val3 val4</code></p>
+<h2 id=""><a href="#" class="headerlink" title="  "></a>  <hr></h2><p> 学习笔记整理来自 <a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的个人网站</a></p>
 
         
         </div>
@@ -291,7 +292,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="ciwqc7nk20001do9afbmk48eu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="ciwqcs60p0002nt9awdh9lpum" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
