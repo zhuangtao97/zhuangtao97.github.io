@@ -3,14 +3,35 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2016 | Toasm&#39;s Blog</title>
+    <title>tensorflow 在 iOS 中的使用初体验 | Toasm&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Toasm's Blog">
-<meta property="og:url" content="http://zhuangtao97.github.io/archives/2016/index.html">
+    <meta name="description" content="随着tensorflow最近的更新，编译iOS库方便了很多，话不多说，我们先看看运行的效果图。
+
+是不是很神奇，就目前而已，虽然辨识度还不是很高，只能识别寻常的物品，但是相信在不久的将来会有很快的发展 
+以下是我下载tensorflow到在xcode上面运行成功的全部过程。
+1, 下载 tensorflow 
+ tensorflow的github地址 https://github.com/tens">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tensorflow 在 iOS 中的使用初体验">
+<meta property="og:url" content="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/index.html">
 <meta property="og:site_name" content="Toasm's Blog">
+<meta property="og:description" content="随着tensorflow最近的更新，编译iOS库方便了很多，话不多说，我们先看看运行的效果图。
+
+是不是很神奇，就目前而已，虽然辨识度还不是很高，只能识别寻常的物品，但是相信在不久的将来会有很快的发展 
+以下是我下载tensorflow到在xcode上面运行成功的全部过程。
+1, 下载 tensorflow 
+ tensorflow的github地址 https://github.com/tens">
+<meta property="og:image" content="http://ohuqd6tha.bkt.clouddn.com/ios.png">
+<meta property="og:updated_time" content="2016-12-25T14:53:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Toasm's Blog">
+<meta name="twitter:title" content="tensorflow 在 iOS 中的使用初体验">
+<meta name="twitter:description" content="随着tensorflow最近的更新，编译iOS库方便了很多，话不多说，我们先看看运行的效果图。
+
+是不是很神奇，就目前而已，虽然辨识度还不是很高，只能识别寻常的物品，但是相信在不久的将来会有很快的发展 
+以下是我下载tensorflow到在xcode上面运行成功的全部过程。
+1, 下载 tensorflow 
+ tensorflow的github地址 https://github.com/tens">
+<meta name="twitter:image" content="http://ohuqd6tha.bkt.clouddn.com/ios.png">
     
 
     
@@ -203,25 +224,21 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2016</h1>
-            </div>
+            <section id="main"><article id="post-ios_tensorflow_01" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/25/ios_tensorflow_01/">tensorflow 在 iOS 中的使用初体验</a>
+        <h1 class="article-title" itemprop="name">
+            tensorflow 在 iOS 中的使用初体验
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2016/12/25/ios_tensorflow_01/">
@@ -230,75 +247,157 @@
     </div>
 
 
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/tensorflow/">tensorflow</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/10/python_parameters/">python</a>
-        </h1>
-    
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>随着tensorflow最近的更新，编译iOS库方便了很多，话不多说，我们先看看运行的效果图。</p>
+<p><img src="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg"><br><img src="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg"></p>
+<p>是不是很神奇，就目前而已，虽然辨识度还不是很高，只能识别寻常的物品，但是相信在不久的将来会有很快的发展 </p>
+<p>以下是我下载tensorflow到在xcode上面运行成功的全部过程。</p>
+<p><strong>1, 下载 tensorflow </strong></p>
+<p> tensorflow的github地址 <code>https://github.com/tensorflow/tensorflow.git</code></p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/tensorflow</span><span class="regexp">/tensorflow.git</span></div></pre></td></tr></table></figure>
+<p>下载完成以后，打开在项目  <code>tensorflow/tensorflow/contrib/ios_examples</code> 你会发现该目录下有三个项目文件和一个readme.md.<br>分别是 <code>benchmark</code> <code>camera</code> <code>simple</code></p>
+<p>这个时候如果我们运行项目肯定是不成功的，在readme.md中我们可以发现，在iOS平台上运行tensorflow例子需要满足下面三点：</p>
+<p>你的Xcode版本必须在7.3以上,并且安装了 <code>command-line工具</code>本人用的Xcode8 默认就有安装。</p>
+<p>项目中必须有一个静态库：<code>libtensorflow-core.a</code> 这个在下载的项目中是没有的，需要我们自己编译生成，生成过程我们待会会讲到。</p>
+<p>下载 <a href="https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip" target="_blank" rel="external">Inception v1</a>,解压后将 <code>imagenet_comp_graph_label_strings.txt</code> 和 <code>tensorflow_inception_graph.pb</code> 放在 simple 和 camera 的项目中。</p>
+<p><strong>2, 生成<code>libtensorflow-core.a</code>静态库 </strong></p>
+<p>我们的最终目的是能够编译运行 camera 项目 ,该项目在 <code>tensorflow/tensorflow/contrib/ios_examples</code>中，前面有提到过，之前我们已经通过 <a href="https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip" target="_blank" rel="external">Inception v1</a>得到了<code>imagenet_comp_graph_label_strings.txt</code>和<code>tensorflow_inception_graph.pb</code>两个文件，所以现在就是编译生成 <code>libtensorflow-core.a</code>静态库。</p>
+<p>进入目录：<code>tensorflow/tensorflow/contrib/makefile</code> ，你可以看到一大堆 .sh 结尾的文件，找到 build_all_ios.sh ，Mac 上可以直接在 termina（终端）上运行命令编译</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh build_all_ios.sh</div></pre></td></tr></table></figure>
+<p>这是一个漫长的代码翻滚过程，几个小时是很正常的。在此过程中可能也会遇到问题，以下是我遇到的问题。以及解决方法：<br>问题一：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">+ autoreconf -f -i -Wall,no-obsolete</div><div class="line">Can<span class="string">'t exec "aclocal": No such file or directory at /usr/local/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 326.</span></div><div class="line">autoreconf: failed to run aclocal: No such file or director</div></pre></td></tr></table></figure>
+<p>解决方案: 在mac上安装软件包管理工具 <code>Homebrew</code><br>然后终端运行 </p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install automake -v</div></pre></td></tr></table></figure>
+<p>问题二：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> configure.<span class="symbol">ac:</span><span class="number">30</span>: <span class="symbol">error:</span> possibly undefined <span class="symbol">macro:</span> AC_PROG_LIBTOOL</div><div class="line">      If this token <span class="keyword">and</span> others are legitimate, please use m4_pattern_allow.</div><div class="line">      See the Autoconf documentation.</div><div class="line"><span class="symbol">autoreconf:</span> /usr/local/Cellar/autoconf/<span class="number">2.69</span>/bin/autoconf failed with exit <span class="symbol">status:</span> <span class="number">1</span></div></pre></td></tr></table></figure></p>
+<p>该问题是应为没有安装libtool导致的，所以终端输入：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install libtool</div></pre></td></tr></table></figure></p>
+<p><strong>3, 运行项目</strong></p>
+<p>编译成功后，你可以在目录　<code>tensorflow/tensorflow/contrib/makefile／gen/lib</code> 下找到一个静态库：<code>libtensorflow-core.a</code>，把这个静态库拷贝到<code>camera</code>项目中，然后编译运行。</p>
+<p><a href="http://baixin.io/2016/11/TensorFlowOniOSUse1/" target="_blank" rel="external">参考博文</a></p>
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/10/python_parameters/">
-            <time datetime="2016-12-10T09:42:07.000Z" itemprop="datePublished">2016-12-10</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/python/">python</a>
-    </div>
-
-                </div>
-            </div>
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/09/hello-world/">Hello World</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/09/hello-world/">
-            <time datetime="2016-12-09T13:52:58.000Z" itemprop="datePublished">2016-12-09</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-                    
-                </div>
-            </div>
-        </div>
-    
+
 </div>
+
+    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cix4s0zrp0000c29auo2n0k08" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/12/10/python_parameters/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">python</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -433,11 +532,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = 'undefined';
+            this.page.url = 'http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/';
+        
+        this.page.identifier = 'ios_tensorflow_01';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'https-github-com-zhuangtao97' + '.disqus.com/count.js';
+        s.src = '//' + 'https-github-com-zhuangtao97' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
