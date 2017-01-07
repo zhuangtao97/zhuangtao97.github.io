@@ -3,14 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2016 | Toasm&#39;s Blog</title>
+    <title>在 mac 上使用Python3.0以上版本 | Toasm&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Toasm's Blog">
-<meta property="og:url" content="http://zhuangtao97.github.io/archives/2016/index.html">
+    <meta name="description" content="在 macOS sierra 中使用python安装第三方模板的时候，使用命令pip install PakeageName当提示安装失败时,最有可能的就是mac自带Python版本2.7的原因，Python2.7内置的pip是7.0.1.这个时候你使用pip install 可能会失败。即使安装成功，也是安装在mac自带的Python中。那么这个是当你想使用Python3.0以上的版本怎么办呢，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在 mac 上使用Python3.0以上版本">
+<meta property="og:url" content="http://zhuangtao97.github.io/2017/01/07/python_installModule/index.html">
 <meta property="og:site_name" content="Toasm's Blog">
+<meta property="og:description" content="在 macOS sierra 中使用python安装第三方模板的时候，使用命令pip install PakeageName当提示安装失败时,最有可能的就是mac自带Python版本2.7的原因，Python2.7内置的pip是7.0.1.这个时候你使用pip install 可能会失败。即使安装成功，也是安装在mac自带的Python中。那么这个是当你想使用Python3.0以上的版本怎么办呢，">
+<meta property="og:image" content="http://ohuqd6tha.bkt.clouddn.com/python.png">
+<meta property="og:updated_time" content="2017-01-07T15:06:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Toasm's Blog">
+<meta name="twitter:title" content="在 mac 上使用Python3.0以上版本">
+<meta name="twitter:description" content="在 macOS sierra 中使用python安装第三方模板的时候，使用命令pip install PakeageName当提示安装失败时,最有可能的就是mac自带Python版本2.7的原因，Python2.7内置的pip是7.0.1.这个时候你使用pip install 可能会失败。即使安装成功，也是安装在mac自带的Python中。那么这个是当你想使用Python3.0以上的版本怎么办呢，">
+<meta name="twitter:image" content="http://ohuqd6tha.bkt.clouddn.com/python.png">
     
 
     
@@ -203,102 +209,161 @@
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2016</h1>
-            </div>
+            <section id="main"><article id="post-python_installModule" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/25/ios_tensorflow_01/">tensorflow 在 iOS 中的使用初体验</a>
+        <h1 class="article-title" itemprop="name">
+            在 mac 上使用Python3.0以上版本
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/12/25/ios_tensorflow_01/">
-            <time datetime="2016-12-25T09:42:07.000Z" itemprop="datePublished">2016-12-25</time>
+        <a href="/2017/01/07/python_installModule/">
+            <time datetime="2017-01-07T02:42:07.000Z" itemprop="datePublished">2017-01-07</time>
         </a>
     </div>
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/tensorflow/">tensorflow</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/10/python_parameters/">python</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/10/python_parameters/">
-            <time datetime="2016-12-10T09:42:07.000Z" itemprop="datePublished">2016-12-10</time>
-        </a>
-    </div>
-
-
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/python/">python</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>在 macOS sierra 中使用python安装第三方模板的时候，使用命令<code>pip install PakeageName</code><br>当提示安装失败时,最有可能的就是mac自带Python版本2.7的原因，Python2.7内置的pip是7.0.1.<br>这个时候你使用pip install 可能会失败。即使安装成功，也是安装在mac自带的Python中。<br>那么这个是当你想使用Python3.0以上的版本怎么办呢，下面我的解决方案：</p>
+<p><a href="https://www.python.org/downloads/" target="_blank" rel="external">下载高版本的Python版本</a>,下载点击pkg安装，然后无脑下一步就行了，<br>安装成功以后，终端打开<code>~/.bash_profile</code>文件，此时你应该能看到你所安装的Python版本的环境变量：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PATH=<span class="string">"/Library/Frameworks/Python.framework/Versions/3.5/bin:$&#123;PATH&#125;"</span></div></pre></td></tr></table></figure>
+<p>   在下面加上<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">alias</span> python=<span class="string">"/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5"</span></div></pre></td></tr></table></figure></p>
+<p>   关闭<code>.bash_profile</code>文件 终端执行<code>source .bash_profile</code></p>
+<p>   这样我们就可以使用高版本的Python了，从而跳过mac自带的Python版本。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cixndeo1q0005789aykftzvea" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/12/09/hello-world/">Hello World</a>
-        </h1>
+        <a href="http://zhuangtao97.github.io/2017/01/07/python_installModule/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/">Comments</a>
     
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/09/hello-world/">
-            <time datetime="2016-12-09T13:52:58.000Z" itemprop="datePublished">2016-12-09</time>
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/12/25/ios_tensorflow_01/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">tensorflow 在 iOS 中的使用初体验</div>
         </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
 
-
-                    
-                    
-                </div>
-            </div>
-        </div>
     
-</div>
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -452,11 +517,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = 'undefined';
+            this.page.url = 'http://zhuangtao97.github.io/2017/01/07/python_installModule/';
+        
+        this.page.identifier = 'python_installModule';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'https-github-com-zhuangtao97' + '.disqus.com/count.js';
+        s.src = '//' + 'https-github-com-zhuangtao97' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
