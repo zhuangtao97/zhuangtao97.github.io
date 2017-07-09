@@ -3,15 +3,27 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Categories | Toasm&#39;s Blog</title>
+    <title>Toasm&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="http://zhuangtao97.github.io/categories/index.html">
+    <meta name="description" content="title: iOS 使用FFMPEG进行音视频编解码学习大全date: 2017-4-21 14:36:07tags: 
+
+iOS
+FFMPEGthumbnail: http://ohuqd6tha.bkt.clouddn.com/ios.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Toasm's Blog">
+<meta property="og:url" content="http://zhuangtao97.github.io/2016/12/09/ios_ffmpeg/index.html">
 <meta property="og:site_name" content="Toasm's Blog">
-<meta property="og:updated_time" content="2016-12-06T21:21:38.000Z">
+<meta property="og:description" content="title: iOS 使用FFMPEG进行音视频编解码学习大全date: 2017-4-21 14:36:07tags: 
+
+iOS
+FFMPEGthumbnail: http://ohuqd6tha.bkt.clouddn.com/ios.png">
+<meta property="og:updated_time" content="2017-07-09T03:10:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Categories">
+<meta name="twitter:title" content="Toasm's Blog">
+<meta name="twitter:description" content="title: iOS 使用FFMPEG进行音视频编解码学习大全date: 2017-4-21 14:36:07tags: 
+
+iOS
+FFMPEGthumbnail: http://ohuqd6tha.bkt.clouddn.com/ios.png">
     
 
     
@@ -204,14 +216,136 @@
 </aside>
 
             
-            <section id="main"><section class="layout-wrap">
-    <div class="layout-title">
-        <span>Categories</span>
-    </div>
-    <div class="layout-wrap-inner list-categories">
+            <section id="main"><article id="post-ios_ffmpeg" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <hr>
+<p>title: iOS 使用FFMPEG进行音视频编解码学习大全<br>date: 2017-4-21 14:36:07<br>tags: </p>
+<ul>
+<li>iOS</li>
+<li>FFMPEG<br>thumbnail: <a href="http://ohuqd6tha.bkt.clouddn.com/ios.png" target="_blank" rel="external">http://ohuqd6tha.bkt.clouddn.com/ios.png</a></li>
+</ul>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2016/12/09/ios_ffmpeg/" data-id="cj4w575wp0002mt9a82y1dvid" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2016/12/09/ios_ffmpeg/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2016/12/09/ios_ffmpeg/">Comments</a>
+    
+
+        </footer>
     </div>
-</section></section>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/12/09/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Hello World
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+</section>
             
                 <aside id="sidebar">
    
@@ -383,9 +517,9 @@
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://zhuangtao97.github.io/categories/index.html';
+            this.page.url = 'http://zhuangtao97.github.io/2016/12/09/ios_ffmpeg/';
         
-        this.page.identifier = 'undefined';
+        this.page.identifier = 'ios_ffmpeg';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
