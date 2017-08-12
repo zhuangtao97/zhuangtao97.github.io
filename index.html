@@ -242,9 +242,9 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>__1，引入了Objective-C没有的类型，比如tuple，tuple这种数据类型 允许创建并传递值组(不同类型的值组)使用场景：可以使用元组作为一个单一的复合值函数返回多个值。</p>
-<p>__2，Swift引入可选类型：swift引入可选类型处理空值。使用可选类型类似于Objective-C使用nil来处理对象，但是swift的可选类型适用于所以类型（基础类型，对象类型）。swift的可选类型相对于Objective-C的nil指针来说不仅仅更加安全和富有表现力，而且是swift的一种强有力的特征表现。</p>
-<p>__3，Swift是一门类型安全的语言(Type safety,Type Inference)，总所周知，Objective-C是一门动态语言，对象类型在运行时确定，这样最大的问题就在于类型的不确定性导致程序运行时不够稳定。而swift改善了这一机制，swift 通过编译器检测当你把一个Int值赋给String类型时报错。不仅如此，类型安全还避免了把可选类型的对象赋值给不可选类型的对象。类型安全可以帮助我们尽量在开发阶段捕获程序出现的问题，而不是在生产环境下再去发现问题。</p>
+            <p><strong>1，引入了Objective-C没有的类型，比如tuple，tuple这种数据类型 允许创建并传递值组(不同类型的值组)使用场景：可以使用元组作为一个单一的复合值函数返回多个值。</strong></p>
+<p><strong>2，Swift引入可选类型：swift引入可选类型处理空值。使用可选类型类似于Objective-C使用nil来处理对象，但是swift的可选类型适用于所以类型（基础类型，对象类型）。swift的可选类型相对于Objective-C的nil指针来说不仅仅更加安全和富有表现力，而且是swift的一种强有力的特征表现。</strong></p>
+<p><strong>3，Swift是一门类型安全的语言(Type safety,Type Inference)，总所周知，Objective-C是一门动态语言，对象类型在运行时确定，这样最大的问题就在于类型的不确定性导致程序运行时不够稳定。而swift改善了这一机制，swift 通过编译器检测当你把一个Int值赋给String类型时报错。不仅如此，类型安全还避免了把可选类型的对象赋值给不可选类型的对象。类型安全可以帮助我们尽量在开发阶段捕获程序出现的问题，而不是在生产环境下再去发现问题。</strong></p>
 
         
         </div>
@@ -255,7 +255,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj695j46r0009oe9ahz819yex" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj695qb750009qx9ap175chbb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -371,7 +371,7 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>swif 的中已经抛弃dispatch_once函数，所以不能使用OC创建单例的模式在swift中创建单例了。<br>而swift创建单例的模式更加简单了，使用 Static关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">class Singleton &#123;</div><div class="line"></div><div class="line">    static let shareInstance = Singleton() //默认构造函数</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+            <p>swift 的中已经抛弃dispatch_once函数，所以不能使用OC创建单例的模式在swift中创建单例了。<br>而swift创建单例的模式更加简单了，使用 Static关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">class Singleton &#123;</div><div class="line"></div><div class="line">    static let shareInstance = Singleton() //默认构造函数</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
         
         </div>
@@ -382,7 +382,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj695j4610004oe9aeq1zlkdu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj695qb740007qx9aozaar1md" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -510,7 +510,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj695j46p0007oe9a5ethl5qu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj695qb6r0004qx9a516m14rx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -588,299 +588,6 @@
 
 
 
-    <article id="post-http_tcp:ip_socket" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/22/http_tcp:ip_socket/">http tcp/ip socket</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/22/http_tcp:ip_socket/">
-            <time datetime="2017-04-22T06:36:07.000Z" itemprop="datePublished">2017-04-22</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/http/">http</a>, <a class="tag-link" href="/tags/socket/">socket</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>相信不少初学手机联网开发的朋友都想知道Http与Socket连接究竟有什么区别，希望通过自己的浅显理解能对初学者有所帮助。</p>
-<p>首先一定要明白：</p>
-<p>HTTP协议：简单对象访问协议，对应于应用层  ，HTTP协议是基于TCP连接的</p>
-<p>tcp协议：    对应于传输层</p>
-<p>ip协议：     对应于网络层<br>TCP/IP是传输层协议，主要解决数据如何在网络中传输；而HTTP是应用层协议，主要解决如何包装数据。</p>
-<p>Socket是对TCP/IP协议的封装，Socket本身并不是协议，而是一个调用接口（API），通过Socket，我们才能使用TCP/IP协议。</p>
-<p>http连接：http连接就是所谓的短连接，即客户端向服务器端发送一次请求，服务器端响应后连接即会断掉；</p>
-<p>socket连接：socket连接就是所谓的长连接，理论上客户端和服务器端一旦建立起连接将不会主动断掉；但是由于各种环境因素可能会是连接断开，比如说：服务器端或客户端主机down了，网络故障，或者两者之间长时间没有数据传输，网络防火墙可能会断开该连接以释放网络资源。所以当一个socket连接中没有数据的传输，那么为了维持连接需要发送心跳消息~~具体心跳消息格式是开发者自己定义的</p>
-<p>1、TCP连接</p>
-<p>要想明白Socket连接，先要明白TCP连接。手机能够使用联网功能是因为手机底层实现了TCP/IP协议，可以使手机终端通过无线网络建立TCP连接。TCP协议可以对上层网络提供接口，使上层网络数据的传输建立在“无差别”的网络之上。</p>
-<p>建立起一个TCP连接需要经过“三次握手”：</p>
-<p>第一次握手：客户端发送syn包(syn=j)到服务器，并进入SYN_SEND状态，等待服务器确认；</p>
-<p>第二次握手：服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态；</p>
-<p>第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。</p>
-<p>握手过程中传送的包里不包含数据，三次握手完毕后，客户端与服务器才正式开始传送数据。理想状态下，TCP连接一旦建立，在通信双方中的任何一方主动关闭连接之前，TCP 连接都将被一直保持下去。断开连接时服务器和客户端均可以主动发起断开TCP连接的请求，断开过程需要经过“四次握手”（过程就不细写了，就是服务器和客户端交互，最终确定断开）</p>
-<p>2、HTTP连接</p>
-<p>HTTP协议即超文本传送协议(Hypertext Transfer Protocol )，是Web联网的基础，也是手机联网常用的协议之一，HTTP协议是建立在TCP协议之上的一种应用。</p>
-<p>HTTP连接最显著的特点是客户端发送的每次请求都需要服务器回送响应，在请求结束后，会主动释放连接。从建立连接到关闭连接的过程称为“一次连接”。</p>
-<p>1）在HTTP 1.0中，客户端的每次请求都要求建立一次单独的连接，在处理完本次请求后，就自动释放连接。</p>
-<p>2）在HTTP 1.1中则可以在一次连接中处理多个请求，并且多个请求可以重叠进行，不需要等待一个请求结束后再发送下一个请求。</p>
-<p>由于HTTP在每次请求结束后都会主动释放连接，因此HTTP连接是一种“短连接”，要保持客户端程序的在线状态，需要不断地向服务器发起连接请求。通常的做法是即时不需要获得任何数据，客户端也保持每隔一段固定的时间向服务器发送一次“保持连接”的请求，服务器在收到该请求后对客户端进行回复，表明知道客户端“在线”。若服务器长时间无法收到客户端的请求，则认为客户端“下线”，若客户端长时间无法收到服务器的回复，则认为网络已经断开。</p>
-<p>3、SOCKET原理</p>
-<p>3.1套接字（socket）概念</p>
-<p>套接字（socket）是通信的基石，是支持TCP/IP协议的网络通信的基本操作单元。它是网络通信过程中端点的抽象表示，包含进行网络通信必须的五种信息：连接使用的协议，本地主机的IP地址，本地进程的协议端口，远地主机的IP地址，远地进程的协议端口。</p>
-<p>应用层通过传输层进行数据通信时，TCP会遇到同时为多个应用程序进程提供并发服务的问题。多个TCP连接或多个应用程序进程可能需要通过同一个 TCP协议端口传输数据。为了区别不同的应用程序进程和连接，许多计算机操作系统为应用程序与TCP／IP协议交互提供了套接字(Socket)接口。应用层可以和传输层通过Socket接口，区分来自不同应用程序进程或网络连接的通信，实现数据传输的并发服务。</p>
-<p>3.2 建立socket连接<br>建立Socket连接至少需要一对套接字，其中一个运行于客户端，称为ClientSocket ，另一个运行于服务器端，称为ServerSocket 。</p>
-<p>套接字之间的连接过程分为三个步骤：服务器监听，客户端请求，连接确认。</p>
-<p>服务器监听：服务器端套接字并不定位具体的客户端套接字，而是处于等待连接的状态，实时监控网络状态，等待客户端的连接请求。</p>
-<p>客户端请求：指客户端的套接字提出连接请求，要连接的目标是服务器端的套接字。为此，客户端的套接字必须首先描述它要连接的服务器的套接字，指出服务器端套接字的地址和端口号，然后就向服务器端套接字提出连接请求。</p>
-<p>连接确认：当服务器端套接字监听到或者说接收到客户端套接字的连接请求时，就响应客户端套接字的请求，建立一个新的线程，把服务器端套接字的描述发给客户端，一旦客户端确认了此描述，双方就正式建立连接。而服务器端套接字继续处于监听状态，继续接收其他客户端套接字的连接请求。</p>
-<p>4、SOCKET连接与TCP连接</p>
-<p>创建Socket连接时，可以指定使用的传输层协议，Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议进行连接时，该Socket连接就是一个TCP连接。</p>
-<p>5、Socket连接与HTTP连接</p>
-<p>由于通常情况下Socket连接就是TCP连接，因此Socket连接一旦建立，通信双方即可开始相互发送数据内容，直到双方连接断开。但在实际网络应用中，客户端到服务器之间的通信往往需要穿越多个中间节点，例如路由器、网关、防火墙等，大部分防火墙默认会关闭长时间处于非活跃状态的连接而导致 Socket 连接断连，因此需要通过轮询告诉网络，该连接处于活跃状态。</p>
-<p>而HTTP连接使用的是“请求—响应”的方式，不仅在请求时需要先建立连接，而且需要客户端向服务器发出请求后，服务器端才能回复数据。</p>
-<p>很多情况下，需要服务器端主动向客户端推送数据，保持客户端与服务器数据的实时与同步。此时若双方建立的是Socket连接，服务器就可以直接将数据传送给客户端；若双方建立的是HTTP连接，则服务器需要等到客户端发送一次请求后才能将数据传回给客户端，因此，客户端定时向服务器端发送连接请求，不仅可以保持在线，同时也是在“询问”服务器是否有新的数据，如果有就将数据传给客户端。</p>
-<p><a href="http://itindex.net/detail/47119-socket-http" target="_blank" rel="external">文章来源地址</a></p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://zhuangtao97.github.io/2017/04/22/http_tcp:ip_socket/" data-id="cj695j45f0002oe9aqz6umh5u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://zhuangtao97.github.io/2017/04/22/http_tcp:ip_socket/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/04/22/http_tcp:ip_socket/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-mac:linux_lsof:kill_process" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/21/mac:linux_lsof:kill_process/">mac/linux  查找使用当前端口的进程</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/21/mac:linux_lsof:kill_process/">
-            <time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/linux/">linux</a>, <a class="tag-link" href="/tags/mac/">mac</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <!-- ![](http://ohuqd6tha.bkt.clouddn.com/python_parameters.png) -->
-<h3 id="lsof-list-open-files"><a href="#lsof-list-open-files" class="headerlink" title="lsof(list open files)"></a>lsof(list open files)</h3><p><strong>lsof -i:8077 查看当前使用该端口的进程。</strong></p>
-<p><strong>kill -9 PID 杀死当前进程。</strong></p>
-<h2 id=""><a href="#" class="headerlink" title="  "></a>  <hr></h2><p> 学习笔记整理来自 [用python进行数据分析]</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj695j46w000doe9auot4e1t4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-plugman_createPlugin" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -932,7 +639,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj695j471000goe9a07ebrtqi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj695qb7d000dqx9af6zro8ch" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1010,6 +717,136 @@
 
 
 
+    <article id="post-mac:linux_lsof:kill_process" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/04/21/mac:linux_lsof:kill_process/">mac/linux  查找使用当前端口的进程</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/04/21/mac:linux_lsof:kill_process/">
+            <time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/linux/">linux</a>, <a class="tag-link" href="/tags/mac/">mac</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <!-- ![](http://ohuqd6tha.bkt.clouddn.com/python_parameters.png) -->
+<h3 id="lsof-list-open-files"><a href="#lsof-list-open-files" class="headerlink" title="lsof(list open files)"></a>lsof(list open files)</h3><p><strong>lsof -i:8077 查看当前使用该端口的进程。</strong></p>
+<p><strong>kill -9 PID 杀死当前进程。</strong></p>
+<h2 id=""><a href="#" class="headerlink" title="  "></a>  <hr></h2><p> 学习笔记整理来自 [用python进行数据分析]</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj695qb7e000eqx9awmhjzxha" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-python_pandas_datafreme.dropna" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1061,7 +898,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj695j47c000loe9alkgp9bia" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj695qb7k000iqx9a6ln6ou31" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1139,6 +976,169 @@
 
 
 
+    <article id="post-http_tcp:ip_socket" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/01/12/http_tcp:ip_socket/">http tcp/ip socket</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/01/12/http_tcp:ip_socket/">
+            <time datetime="2017-01-12T06:36:07.000Z" itemprop="datePublished">2017-01-12</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/http/">http</a>, <a class="tag-link" href="/tags/socket/">socket</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>相信不少初学手机联网开发的朋友都想知道Http与Socket连接究竟有什么区别，希望通过自己的浅显理解能对初学者有所帮助。</p>
+<p>首先一定要明白：</p>
+<p>HTTP协议：简单对象访问协议，对应于应用层  ，HTTP协议是基于TCP连接的</p>
+<p>tcp协议：    对应于传输层</p>
+<p>ip协议：     对应于网络层<br>TCP/IP是传输层协议，主要解决数据如何在网络中传输；而HTTP是应用层协议，主要解决如何包装数据。</p>
+<p>Socket是对TCP/IP协议的封装，Socket本身并不是协议，而是一个调用接口（API），通过Socket，我们才能使用TCP/IP协议。</p>
+<p>http连接：http连接就是所谓的短连接，即客户端向服务器端发送一次请求，服务器端响应后连接即会断掉；</p>
+<p>socket连接：socket连接就是所谓的长连接，理论上客户端和服务器端一旦建立起连接将不会主动断掉；但是由于各种环境因素可能会是连接断开，比如说：服务器端或客户端主机down了，网络故障，或者两者之间长时间没有数据传输，网络防火墙可能会断开该连接以释放网络资源。所以当一个socket连接中没有数据的传输，那么为了维持连接需要发送心跳消息~~具体心跳消息格式是开发者自己定义的</p>
+<p>1、TCP连接</p>
+<p>要想明白Socket连接，先要明白TCP连接。手机能够使用联网功能是因为手机底层实现了TCP/IP协议，可以使手机终端通过无线网络建立TCP连接。TCP协议可以对上层网络提供接口，使上层网络数据的传输建立在“无差别”的网络之上。</p>
+<p>建立起一个TCP连接需要经过“三次握手”：</p>
+<p>第一次握手：客户端发送syn包(syn=j)到服务器，并进入SYN_SEND状态，等待服务器确认；</p>
+<p>第二次握手：服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态；</p>
+<p>第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。</p>
+<p>握手过程中传送的包里不包含数据，三次握手完毕后，客户端与服务器才正式开始传送数据。理想状态下，TCP连接一旦建立，在通信双方中的任何一方主动关闭连接之前，TCP 连接都将被一直保持下去。断开连接时服务器和客户端均可以主动发起断开TCP连接的请求，断开过程需要经过“四次握手”（过程就不细写了，就是服务器和客户端交互，最终确定断开）</p>
+<p>2、HTTP连接</p>
+<p>HTTP协议即超文本传送协议(Hypertext Transfer Protocol )，是Web联网的基础，也是手机联网常用的协议之一，HTTP协议是建立在TCP协议之上的一种应用。</p>
+<p>HTTP连接最显著的特点是客户端发送的每次请求都需要服务器回送响应，在请求结束后，会主动释放连接。从建立连接到关闭连接的过程称为“一次连接”。</p>
+<p>1）在HTTP 1.0中，客户端的每次请求都要求建立一次单独的连接，在处理完本次请求后，就自动释放连接。</p>
+<p>2）在HTTP 1.1中则可以在一次连接中处理多个请求，并且多个请求可以重叠进行，不需要等待一个请求结束后再发送下一个请求。</p>
+<p>由于HTTP在每次请求结束后都会主动释放连接，因此HTTP连接是一种“短连接”，要保持客户端程序的在线状态，需要不断地向服务器发起连接请求。通常的做法是即时不需要获得任何数据，客户端也保持每隔一段固定的时间向服务器发送一次“保持连接”的请求，服务器在收到该请求后对客户端进行回复，表明知道客户端“在线”。若服务器长时间无法收到客户端的请求，则认为客户端“下线”，若客户端长时间无法收到服务器的回复，则认为网络已经断开。</p>
+<p>3、SOCKET原理</p>
+<p>3.1套接字（socket）概念</p>
+<p>套接字（socket）是通信的基石，是支持TCP/IP协议的网络通信的基本操作单元。它是网络通信过程中端点的抽象表示，包含进行网络通信必须的五种信息：连接使用的协议，本地主机的IP地址，本地进程的协议端口，远地主机的IP地址，远地进程的协议端口。</p>
+<p>应用层通过传输层进行数据通信时，TCP会遇到同时为多个应用程序进程提供并发服务的问题。多个TCP连接或多个应用程序进程可能需要通过同一个 TCP协议端口传输数据。为了区别不同的应用程序进程和连接，许多计算机操作系统为应用程序与TCP／IP协议交互提供了套接字(Socket)接口。应用层可以和传输层通过Socket接口，区分来自不同应用程序进程或网络连接的通信，实现数据传输的并发服务。</p>
+<p>3.2 建立socket连接<br>建立Socket连接至少需要一对套接字，其中一个运行于客户端，称为ClientSocket ，另一个运行于服务器端，称为ServerSocket 。</p>
+<p>套接字之间的连接过程分为三个步骤：服务器监听，客户端请求，连接确认。</p>
+<p>服务器监听：服务器端套接字并不定位具体的客户端套接字，而是处于等待连接的状态，实时监控网络状态，等待客户端的连接请求。</p>
+<p>客户端请求：指客户端的套接字提出连接请求，要连接的目标是服务器端的套接字。为此，客户端的套接字必须首先描述它要连接的服务器的套接字，指出服务器端套接字的地址和端口号，然后就向服务器端套接字提出连接请求。</p>
+<p>连接确认：当服务器端套接字监听到或者说接收到客户端套接字的连接请求时，就响应客户端套接字的请求，建立一个新的线程，把服务器端套接字的描述发给客户端，一旦客户端确认了此描述，双方就正式建立连接。而服务器端套接字继续处于监听状态，继续接收其他客户端套接字的连接请求。</p>
+<p>4、SOCKET连接与TCP连接</p>
+<p>创建Socket连接时，可以指定使用的传输层协议，Socket可以支持不同的传输层协议（TCP或UDP），当使用TCP协议进行连接时，该Socket连接就是一个TCP连接。</p>
+<p>5、Socket连接与HTTP连接</p>
+<p>由于通常情况下Socket连接就是TCP连接，因此Socket连接一旦建立，通信双方即可开始相互发送数据内容，直到双方连接断开。但在实际网络应用中，客户端到服务器之间的通信往往需要穿越多个中间节点，例如路由器、网关、防火墙等，大部分防火墙默认会关闭长时间处于非活跃状态的连接而导致 Socket 连接断连，因此需要通过轮询告诉网络，该连接处于活跃状态。</p>
+<p>而HTTP连接使用的是“请求—响应”的方式，不仅在请求时需要先建立连接，而且需要客户端向服务器发出请求后，服务器端才能回复数据。</p>
+<p>很多情况下，需要服务器端主动向客户端推送数据，保持客户端与服务器数据的实时与同步。此时若双方建立的是Socket连接，服务器就可以直接将数据传送给客户端；若双方建立的是HTTP连接，则服务器需要等到客户端发送一次请求后才能将数据传回给客户端，因此，客户端定时向服务器端发送连接请求，不仅可以保持在线，同时也是在“询问”服务器是否有新的数据，如果有就将数据传给客户端。</p>
+<p><a href="http://itindex.net/detail/47119-socket-http" target="_blank" rel="external">文章来源地址</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/" data-id="cj695qb6l0002qx9a1t0u67u6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-python_installModule" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1193,7 +1193,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj695j476000ioe9a34fav01j" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj695qb7g000gqx9aai9agqx9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1308,15 +1308,15 @@
         
 <div class="article-gallery">
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj695j46u000boe9awyjm3nuz">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj695qb78000bqx9axs5mv91h">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj695j46u000boe9awyjm3nuz">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj695qb78000bqx9axs5mv91h">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="/..." rel="gallery_cj695j46u000boe9awyjm3nuz">
+    <a class="gallery-item" href="/..." rel="gallery_cj695qb78000bqx9axs5mv91h">
         <img src="/..." itemprop="image" />
     </a>
     
@@ -1359,7 +1359,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj695j46u000boe9awyjm3nuz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj695qb78000bqx9axs5mv91h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1511,7 +1511,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="cj695j46y000eoe9aubusn7in" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="cj695qb7o000lqx9asj13zp4f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1608,7 +1608,7 @@
                             <a href="/2017/07/28/ios_swift_特性/" class="thumbnail">
     
     
-        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/Swift.png)" alt="Swift 与 Objective-C 的区别" class="thumbnail-image"></span>
+        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/swift.png)" alt="Swift 与 Objective-C 的区别" class="thumbnail-image"></span>
     
 </a>
 
@@ -1627,7 +1627,7 @@
                             <a href="/2017/07/22/ios_swift_singleton/" class="thumbnail">
     
     
-        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/Swift.png)" alt="Swift  单例" class="thumbnail-image"></span>
+        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/swift.png)" alt="Swift  单例" class="thumbnail-image"></span>
     
 </a>
 
@@ -1662,10 +1662,10 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/04/22/http_tcp:ip_socket/" class="thumbnail">
+                            <a href="/2017/04/21/plugman_createPlugin/" class="thumbnail">
     
     
-        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/ios.png)" alt="http tcp/ip socket" class="thumbnail-image"></span>
+        <span class="thumbnail-image thumbnail-none"></span>
     
 </a>
 
@@ -1673,8 +1673,8 @@
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/04/22/http_tcp:ip_socket/" class="title">http tcp/ip socket</a></p>
-                            <p class="item-date"><time datetime="2017-04-22T06:36:07.000Z" itemprop="datePublished">2017-04-22</time></p>
+                            <p class="item-title"><a href="/2017/04/21/plugman_createPlugin/" class="title">plugman创建插件</a></p>
+                            <p class="item-date"><time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time></p>
                         </div>
                     </li>
                 
@@ -1708,7 +1708,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li></ul>
         </div>
     </div>
 
