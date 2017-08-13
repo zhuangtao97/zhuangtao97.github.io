@@ -204,6 +204,135 @@
 
             
             <section id="main">
+    <article id="post-ios_swift_closure" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/08/12/ios_swift_closure/">Swift  Closures(闭包) 函数快</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/08/12/ios_swift_closure/">
+            <time datetime="2017-08-11T16:00:00.000Z" itemprop="datePublished">2017-08-12</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Swift/">Swift</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><strong> swift中函数快，把函数作为参数传递，在Objective-C中是一个block 对象，swift中称为closure<br>apple 文档中定义格式 as follow</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123; (parameters) -&gt; return type in</div><div class="line"></div><div class="line">    statements</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong> 给closure定义一个别名</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">typealias myClosure = (parameters) -&gt; returnType</div></pre></td></tr></table></figure></p>
+<p><strong> 这样我们就定义了一个myClosure类型的闭包</strong></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2017/08/12/ios_swift_closure/" data-id="cj6agliim0007fb9aqg5zso5o" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2017/08/12/ios_swift_closure/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/08/12/ios_swift_closure/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-ios_swift_特性" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -255,7 +384,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj6agb67r0009c99a26gk3htb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj6agliip000bfb9aweo0c98b" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -382,7 +511,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj6agb67q0008c99acvmii80g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj6agliio0009fb9a8o9rvh60" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -510,7 +639,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj6agb67f0004c99au7ivqau8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj6agliic0002fb9aztesatir" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -640,7 +769,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj6agb67u000cc99ax03qz9un" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj6agliir000efb9a9avuc5xt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -769,7 +898,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj6agb67u000ec99au1njefmn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj6agliis000gfb9art38qg2f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -898,7 +1027,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj6agb67z000jc99aj3isdcwm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj6agliiy000lfb9aaeodas4t" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1061,7 +1190,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/" data-id="cj6agb67c0002c99aqwqonhll" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/" data-id="cj6agliif0004fb9a8ivsihpz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1193,7 +1322,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj6agb67y000gc99aj17gi87t" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj6agliiv000ifb9aovlhrsva" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1308,15 +1437,15 @@
         
 <div class="article-gallery">
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj6agb67t000bc99az36id5gh">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj6agliiq000dfb9an3kkrfy0">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj6agb67t000bc99az36id5gh">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj6agliiq000dfb9an3kkrfy0">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="/..." rel="gallery_cj6agb67t000bc99az36id5gh">
+    <a class="gallery-item" href="/..." rel="gallery_cj6agliiq000dfb9an3kkrfy0">
         <img src="/..." itemprop="image" />
     </a>
     
@@ -1359,7 +1488,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj6agb67t000bc99az36id5gh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj6agliiq000dfb9an3kkrfy0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1437,158 +1566,6 @@
 
 
 
-    <article id="post-python_parameters" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/12/10/python_parameters/">python</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/10/python_parameters/">
-            <time datetime="2016-12-10T09:42:07.000Z" itemprop="datePublished">2016-12-10</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/python/">python</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <!-- ![](http://ohuqd6tha.bkt.clouddn.com/python_parameters.png) -->
-<h3 id="python中5种参数类型"><a href="#python中5种参数类型" class="headerlink" title="python中5种参数类型"></a>python中5种参数类型</h3><p><strong>1, 必选参数</strong></p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,key2)</span></span>:</div><div class="line">    print (key1,key2)</div><div class="line">parameters(<span class="string">"val1"</span>,<span class="string">"val2"</span>)</div></pre></td></tr></table></figure>
-<p><code>打印: (&#39;val1&#39;, &#39;val2&#39;)</code></p>
-<p><strong>2, 默认参数</strong></p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,key2=<span class="string">'val2'</span>)</span></span>:</div><div class="line">    print (key1,key2)</div><div class="line">parameters(<span class="string">'val1'</span>,<span class="string">'test'</span>)</div></pre></td></tr></table></figure>
-<p><code>打印: (&#39;val1&#39;, &#39;test&#39;)</code></p>
-<p>定义默认参数，调用时可缺省调用。</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">方法调用: parameters(<span class="string">'val1'</span>)</div></pre></td></tr></table></figure>
-<p><code>打印: (&#39;val1&#39;, &#39;val2&#39;)</code></p>
-<p><strong>3, 可变参数:(顾名思义，即参数的个数可变)</strong></p>
-<p> 在调用时 可变参数在函数体内当成一个tuple类型处理</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,*key2)</span></span>:</div><div class="line">    print (key1,key2)</div><div class="line">parameters(<span class="string">'val1'</span>,<span class="string">'val2'</span>,<span class="string">'val3'</span>,<span class="string">'val4'</span>)</div></pre></td></tr></table></figure>
-<p><code>打印：(&#39;val1&#39;, (&#39;val2&#39;, &#39;val3&#39;, &#39;val4&#39;))</code></p>
-<p><strong>4, 关键字参数</strong></p>
-<p> 调用时 key2 在函数体内被当成dictionary处理 传入参数时，应当传入一个dictionary类型。调用函数时可只传必选参数，也可以传入任意多个关键字参数，其中关键字会在函数内部会被当做key来处理。</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,**key2)</span></span>:</div><div class="line">    print (key1,key2)</div><div class="line">parameters(<span class="string">'val1'</span>,dictKey=<span class="string">'dictValue'</span>)</div></pre></td></tr></table></figure>
-<p><code>打印：(&#39;val1&#39;, {&#39;dictKey&#39;: &#39;dictValue&#39;})</code></p>
-<p>   如果有多个关键字参数时，我们可以把这些关键字参数放在一个dictionary里面传给关键字参数。</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dict = &#123;<span class="string">'dictKey'</span><span class="symbol">:<span class="string">'dictValue'</span></span>&#125;</div><div class="line">parameters(<span class="string">'val1'</span>,**dict)</div></pre></td></tr></table></figure>
-<p><code>打印：(&#39;val1&#39;, {&#39;dictKey&#39;: &#39;dictValue&#39;})</code></p>
-<p><strong>5, 命名关键字参数</strong>  </p>
-<p><code>python3.0版本以下 无此定义</code></p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">parameters</span><span class="params">(key1,key2,*,key3,key4)</span></span>:</div><div class="line">    print (key1,key2,key3,key4)</div><div class="line"></div><div class="line">parameters(<span class="string">'val1'</span>,<span class="string">'val2'</span>,key3=<span class="string">'val3'</span>,key4=<span class="string">'val4'</span>)</div></pre></td></tr></table></figure>
-<p>  <code>打印: val1 val2 val3 val4</code></p>
-<h2 id=""><a href="#" class="headerlink" title="  "></a>  <hr></h2><p> 学习笔记整理来自 <a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">廖雪峰的个人网站</a></p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="cj6agb689000kc99ajs9fqc7g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://zhuangtao97.github.io/2016/12/10/python_parameters/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
@@ -1601,6 +1578,25 @@
         <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/08/12/ios_swift_closure/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ohuqd6tha.bkt.clouddn.com/swift.png)" alt="Swift  Closures(闭包) 函数快" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/08/12/ios_swift_closure/" class="title">Swift  Closures(闭包) 函数快</a></p>
+                            <p class="item-date"><time datetime="2017-08-11T16:00:00.000Z" itemprop="datePublished">2017-08-12</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -1678,25 +1674,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/04/21/plugman_createPlugin/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/04/21/plugman_createPlugin/" class="title">plugman创建插件</a></p>
-                            <p class="item-date"><time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1708,7 +1685,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
