@@ -151,7 +151,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                12
+                13
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -255,7 +255,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj695qb750009qx9ap175chbb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/28/ios_swift_特性/" data-id="cj6agb67r0009c99a26gk3htb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -382,7 +382,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj695qb740007qx9aozaar1md" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/07/22/ios_swift_singleton/" data-id="cj6agb67q0008c99acvmii80g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -510,7 +510,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj695qb6r0004qx9a516m14rx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/22/ios_ffmpeg/" data-id="cj6agb67f0004c99au7ivqau8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -588,135 +588,6 @@
 
 
 
-    <article id="post-plugman_createPlugin" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/04/21/plugman_createPlugin/">plugman创建插件</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/04/21/plugman_createPlugin/">
-            <time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/cordova/">cordova</a>, <a class="tag-link" href="/tags/cordova-插件/">cordova 插件</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <!-- ![](http://ohuqd6tha.bkt.clouddn.com/python_parameters.png) -->
-<h3 id="plugman-创建插件"><a href="#plugman-创建插件" class="headerlink" title="plugman 创建插件"></a>plugman 创建插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plugman create --name &lt;name&gt; --plugin_id &lt;id&gt; --plugin_version &lt;version&gt;</div></pre></td></tr></table></figure>
-<h3 id="plugman-添加插件支持平台"><a href="#plugman-添加插件支持平台" class="headerlink" title="plugman 添加插件支持平台"></a>plugman 添加插件支持平台</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plugman platform add --platform_name &lt;ios|android&gt;</div></pre></td></tr></table></figure>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj695qb7d000dqx9af6zro8ch" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-mac:linux_lsof:kill_process" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -769,7 +640,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj695qb7e000eqx9awmhjzxha" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/mac:linux_lsof:kill_process/" data-id="cj6agb67u000cc99ax03qz9un" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -847,6 +718,135 @@
 
 
 
+    <article id="post-plugman_createPlugin" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/04/21/plugman_createPlugin/">plugman创建插件</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/04/21/plugman_createPlugin/">
+            <time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/cordova/">cordova</a>, <a class="tag-link" href="/tags/cordova-插件/">cordova 插件</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <!-- ![](http://ohuqd6tha.bkt.clouddn.com/python_parameters.png) -->
+<h3 id="plugman-创建插件"><a href="#plugman-创建插件" class="headerlink" title="plugman 创建插件"></a>plugman 创建插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plugman create --name &lt;name&gt; --plugin_id &lt;id&gt; --plugin_version &lt;version&gt;</div></pre></td></tr></table></figure>
+<h3 id="plugman-添加插件支持平台"><a href="#plugman-添加插件支持平台" class="headerlink" title="plugman 添加插件支持平台"></a>plugman 添加插件支持平台</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plugman platform add --platform_name &lt;ios|android&gt;</div></pre></td></tr></table></figure>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/" data-id="cj6agb67u000ec99au1njefmn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://zhuangtao97.github.io/2017/04/21/plugman_createPlugin/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-python_pandas_datafreme.dropna" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -898,7 +898,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj695qb7k000iqx9a6ln6ou31" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/04/21/python_pandas_datafreme.dropna/" data-id="cj6agb67z000jc99aj3isdcwm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1061,7 +1061,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/" data-id="cj695qb6l0002qx9a1t0u67u6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/01/12/http_tcp:ip_socket/" data-id="cj6agb67c0002c99aqwqonhll" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1193,7 +1193,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj695qb7g000gqx9aai9agqx9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2017/01/07/python_installModule/" data-id="cj6agb67y000gc99aj17gi87t" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1308,15 +1308,15 @@
         
 <div class="article-gallery">
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj695qb78000bqx9axs5mv91h">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" rel="gallery_cj6agb67t000bc99az36id5gh">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_cup.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj695qb78000bqx9axs5mv91h">
+    <a class="gallery-item" href="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" rel="gallery_cj6agb67t000bc99az36id5gh">
         <img src="https://ohurgow3y.qnssl.com/tensorflow_camputer.jpg" itemprop="image" />
     </a>
     
-    <a class="gallery-item" href="/..." rel="gallery_cj695qb78000bqx9axs5mv91h">
+    <a class="gallery-item" href="/..." rel="gallery_cj6agb67t000bc99az36id5gh">
         <img src="/..." itemprop="image" />
     </a>
     
@@ -1359,7 +1359,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj695qb78000bqx9axs5mv91h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/25/ios_tensorflow_01/" data-id="cj6agb67t000bc99az36id5gh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1511,7 +1511,7 @@
 
 </div>
 
-    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="cj695qb7o000lqx9asj13zp4f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://zhuangtao97.github.io/2016/12/10/python_parameters/" data-id="cj6agb689000kc99ajs9fqc7g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1662,25 +1662,6 @@
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/04/21/plugman_createPlugin/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/04/21/plugman_createPlugin/" class="title">plugman创建插件</a></p>
-                            <p class="item-date"><time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2017/04/21/mac:linux_lsof:kill_process/" class="thumbnail">
     
     
@@ -1697,6 +1678,25 @@
                         </div>
                     </li>
                 
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/04/21/plugman_createPlugin/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/04/21/plugman_createPlugin/" class="title">plugman创建插件</a></p>
+                            <p class="item-date"><time datetime="2017-04-21T06:36:07.000Z" itemprop="datePublished">2017-04-21</time></p>
+                        </div>
+                    </li>
+                
             </ul>
         </div>
     </div>
@@ -1708,7 +1708,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
@@ -1717,7 +1717,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/FFMPEG/">FFMPEG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova-插件/">cordova 插件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS，Swift/">iOS，Swift</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandas/">pandas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/socket/">socket</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tensorflow/">tensorflow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据分析/">数据分析</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/FFMPEG/">FFMPEG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Swift/">Swift</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova/">cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cordova-插件/">cordova 插件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS，Swift/">iOS，Swift</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mac/">mac</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandas/">pandas</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/socket/">socket</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tensorflow/">tensorflow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据分析/">数据分析</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1726,7 +1726,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/FFMPEG/" style="font-size: 10px;">FFMPEG</a> <a href="/tags/Swift/" style="font-size: 13.33px;">Swift</a> <a href="/tags/cordova/" style="font-size: 10px;">cordova</a> <a href="/tags/cordova-插件/" style="font-size: 10px;">cordova 插件</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/iOS，Swift/" style="font-size: 10px;">iOS，Swift</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/python/" style="font-size: 16.67px;">python</a> <a href="/tags/socket/" style="font-size: 10px;">socket</a> <a href="/tags/tensorflow/" style="font-size: 10px;">tensorflow</a> <a href="/tags/数据分析/" style="font-size: 10px;">数据分析</a>
+            <a href="/tags/FFMPEG/" style="font-size: 10px;">FFMPEG</a> <a href="/tags/Swift/" style="font-size: 15px;">Swift</a> <a href="/tags/cordova/" style="font-size: 10px;">cordova</a> <a href="/tags/cordova-插件/" style="font-size: 10px;">cordova 插件</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/iOS，Swift/" style="font-size: 10px;">iOS，Swift</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/pandas/" style="font-size: 10px;">pandas</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/socket/" style="font-size: 10px;">socket</a> <a href="/tags/tensorflow/" style="font-size: 10px;">tensorflow</a> <a href="/tags/数据分析/" style="font-size: 10px;">数据分析</a>
         </div>
     </div>
 
